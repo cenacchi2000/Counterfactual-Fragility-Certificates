@@ -1,4 +1,4 @@
-# Counterfactual Fragility Certificates — Anonymous Review Artifact
+# Counterfactual Fragility Certificates: Anonymous Review Artifact
 
 <p align="center">
   <img src="assets/figures/teaser_cfc_framework.png" alt="CFC teaser" width="820">
