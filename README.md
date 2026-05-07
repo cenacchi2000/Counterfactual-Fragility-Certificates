@@ -12,7 +12,7 @@ CFC is a protocol-relative audit object for tabular predictions. Instead of aski
 
 > **Under a declared evidence-failure protocol, what ordered trajectory makes this prediction lose support?**
 
-The artifact contains a compact reference implementation, precomputed result tables, selected figures, and reproduction scripts for the main audit evidence. The goal is to support double-blind review without exposing author-identifying infrastructure or private experiment paths.
+The artifact contains a compact reference implementation, precomputed result tables, selected figures, and reproduction scripts for the main audit evidence. 
 
 ---
 
@@ -27,7 +27,7 @@ The artifact contains a compact reference implementation, precomputed result tab
 | `paper_snippets/` | core LaTeX equations | maps implementation to paper notation |
 | `docs/` | GitHub Pages style artifact card | optional visual landing page |
 
-The full production training grid is intentionally not included in this blinded artifact. This review version exposes the **auditable certificate core** and **reproduction-facing outputs** while removing author-specific paths, machine metadata, and private orchestration code. A full unblinded release can be made after review.
+The full production training grid is intentionally not included in this blinded artifact. This review version exposes the **auditable certificate core** and **reproduction-facing outputs** while removing author-specific paths, machine metadata, and private orchestration code. A full unblinded release will be made after review.
 
 ---
 
@@ -109,14 +109,6 @@ results/figures/recreated_greedy_diagnostics.png
 
 ---
 
-## Artifact policy for double-blind review
-
-This repository is designed to be shared through an anonymous GitHub account or anonymous artifact-hosting service. Before uploading:
-
-1. remove all `.git/` history if copied from a private repository;
-2. set local Git metadata to anonymous values;
-3. do not include personal paths, usernames, institution names, or full raw experiment logs;
-4. keep this repository public only through an anonymous review identity until the review period ends.
 
 Suggested initialization:
 
@@ -130,9 +122,7 @@ git commit -m "anonymous review artifact"
 
 ---
 
-## Scope and honesty statement
-
-This is not a full production code dump. It is a **review-safe artifact** containing:
+This is a **open source artifact** containing:
 
 - the reference CFC computation;
 - the score-conversion and brittle-label protocols;
@@ -140,4 +130,4 @@ This is not a full production code dump. It is a **review-safe artifact** contai
 - selected figures and result recreation scripts;
 - smoke tests that verify the implementation is runnable.
 
-The paper's full grid includes heavier training, model selection, and orchestration code. Those components can be released after de-anonymization.
+The paper's full grid includes heavier training, model selection, and orchestration code. 
