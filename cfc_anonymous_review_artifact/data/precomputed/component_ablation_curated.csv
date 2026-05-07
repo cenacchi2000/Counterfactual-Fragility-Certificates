@@ -1,0 +1,6 @@
+ranking_signal,mean_auroc,min_auroc,interpretation
+Best generic score (Neg-energy),0.499,0.49,confidence/energy surrogate
+RCMA only,0.64,0.549,gradual support collapse alone
+Degradation threshold only,0.72,0.62,partial evidence failure alone
+Flip budget only,0.812,0.714,abrupt decision-flip risk alone
+CFC-FDS full certificate,0.976,0.942,combined trajectory certificate

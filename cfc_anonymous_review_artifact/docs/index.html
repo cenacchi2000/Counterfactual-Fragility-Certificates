@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CFC Anonymous Review Artifact</title>
+<style>
+body{font-family:Inter,Arial,sans-serif;margin:0;background:#f7f8fb;color:#172033;line-height:1.55}.wrap{max-width:1050px;margin:0 auto;padding:32px} .hero{background:white;border:1px solid #e8ebf2;border-radius:22px;padding:28px;box-shadow:0 18px 45px rgba(20,30,60,.08)}h1{font-size:34px;margin:0 0 10px}.tag{display:inline-block;background:#eaf2ff;color:#123e7a;padding:6px 10px;border-radius:999px;font-size:13px;font-weight:700}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:18px}.card{background:white;border:1px solid #e8ebf2;border-radius:18px;padding:18px;box-shadow:0 10px 25px rgba(20,30,60,.05)}.metric{font-size:30px;font-weight:800;color:#0f3d71}.small{font-size:13px;color:#667085}.img{width:100%;border-radius:16px;border:1px solid #e8ebf2;margin-top:18px}code{background:#eef1f6;padding:2px 5px;border-radius:6px}@media(max-width:800px){.grid{grid-template-columns:1fr}}</style>
+</head>
+<body><div class="wrap">
+<div class="hero">
+<span class="tag">Anonymous review artifact</span>
+<h1>Counterfactual Fragility Certificates</h1>
+<p>A compact, review-safe artifact for inspecting how CFC turns a prediction into an ordered evidence-failure trajectory.</p>
+<img class="img" src="../assets/figures/teaser_cfc_framework.png" alt="CFC teaser">
+<div class="grid">
+<div class="card"><div class="metric">0.915</div><b>CFC-FDS AUROC</b><p class="small">Held-out brittle-case identification.</p></div>
+<div class="card"><div class="metric">+0.405</div><b>vs. Neg-energy</b><p class="small">Improvement over strongest non-certificate score.</p></div>
+<div class="card"><div class="metric">88.9%</div><b>Capture@20</b><p class="small">Brittle cases found under 20% review budget.</p></div>
+</div>
+</div>
+<div class="card"><h2>Run the artifact</h2><pre><code>pip install -e . -r requirements.txt
+python scripts/quick_demo.py
+python scripts/reproduce_tables.py
+python scripts/make_figures.py</code></pre></div>
+</div></body></html>

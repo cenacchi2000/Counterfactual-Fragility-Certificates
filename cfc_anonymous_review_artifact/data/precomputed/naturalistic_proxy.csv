@@ -1,0 +1,7 @@
+score,adult_bank_heloc,eligible_subset,gap
+Max-softmax,0.472,0.481,
+Neg-energy,0.541,0.552,
+One-step drop,0.644,0.661,
+Group-SHAP,0.682,0.696,best_alt
+CFC-RCMA,0.735,0.748,0.052
+CFC-FDS,0.812,0.827,0.131

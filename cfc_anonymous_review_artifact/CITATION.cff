@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+title: "Counterfactual Fragility Certificates: Anonymous Review Artifact"
+message: "This is an anonymous review artifact. Citation metadata will be updated after review."
+authors:
+  - family-names: "Anonymous"
+    given-names: "Authors"
+year: 2026
+version: "0.1.0-anonymous"
