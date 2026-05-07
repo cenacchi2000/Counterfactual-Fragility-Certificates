@@ -1,0 +1,11 @@
+ranking_score,uses_trajectory,uses_heldout_label_channel_for_scoring,heldout_brittle_auroc
+Max-softmax,No,No,0.448
+Neg-entropy,No,No,0.449
+Margin,No,No,0.451
+Neg-energy,No,No,0.511
+Random group order,No,No,0.504
+One-step margin drop only,No,No,0.662
+Permutation importance order,No,No,0.691
+Group-SHAP aggregate,No,No,0.718
+CFC-RCMA,Yes,No,0.756
+CFC-FDS,Yes,No,0.914

@@ -1,0 +1,27 @@
+
+% Core equations included for anonymous review artifact documentation.
+\begin{align}
+\mathcal{C}(x;f_\theta,\mathcal{G})
+&=
+\left(
+\mathcal{T}(x),
+k^\star(x),
+\mathrm{RCMA}(x),
+\{\lambda^\star_{\mathcal{P}}(x)\}_{\mathcal{P}\in\mathbb{P}},
+\mathrm{FDS}(x)
+\right),\\
+\mathrm{RCMA}(x)
+&=
+\frac{1}{K+1}\sum_{k=0}^{K}
+\max\!\left\{0,
+\frac{m(x)-m(x^{(k)})}{|m(x)|+10^{-8}}
+\right\},\\
+\mathrm{FDS}(x)
+&=
+1-\exp\!\left(-\left[
+\tfrac{1}{3}\mathrm{RCMA}(x)+
+\tfrac{1}{3}\frac{1}{k^\star(x)}+
+\tfrac{1}{3}\frac{1}{|\mathbb{P}|}\sum_{\mathcal{P}\in\mathbb{P}}
+\frac{\mathbf{1}[\lambda^\star_\mathcal{P}(x)<\infty]}{\lambda^\star_\mathcal{P}(x)+10^{-8}}
+\right]\right).
+\end{align}
