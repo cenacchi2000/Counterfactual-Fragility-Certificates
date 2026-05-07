@@ -110,18 +110,6 @@ results/figures/recreated_greedy_diagnostics.png
 ---
 
 
-Suggested initialization:
-
-```bash
-git init
-git config user.name "Anonymous Authors"
-git config user.email "anonymous@example.invalid"
-git add .
-git commit -m "anonymous review artifact"
-```
-
----
-
 This is a **open source artifact** containing:
 
 - the reference CFC computation;
