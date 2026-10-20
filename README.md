@@ -1,10 +1,8 @@
-# Counterfactual Fragility Certificates: Anonymous Review Artifact
+# Counterfactual Fragility Certificates
 
 <p align="center">
   <img src="assets/figures/teaser_cfc_framework.png" alt="CFC teaser" width="820">
 </p>
-
-This repository is an **anonymous review artifact** for the paper:
 
 > **Counterfactual Fragility Certificates: Exposing High-Confidence Brittleness under Structured Evidence Failure**
 
