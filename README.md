@@ -45,16 +45,3 @@ The demo prints the recomputed removal trajectory, independent attenuation tests
 | [`affine_minimum_removals`](explorer/reference.py) | Minimum grouped baseline-removal depth, with smallest-index class tie rule |
 | [`src/cfc_ref/`](src/cfc_ref) | Earlier compact implementation, preserved for version transparency |
 
-## Possible use in surveillance research
-
-A future forecasting audit could remove a wastewater stream, delay selected observations, or degrade input quality and measure changes in a surge flag. The grouping, replacement mechanism, and operational threshold would have to be declared for that pipeline. These examples operate on tabular class scores and contain no influenza data or forecasting evaluation.
-
-## Version and interpretation boundaries
-
-The earlier compact artifact in `src/cfc_ref/` uses a **fixed one-step ranking** and a narrower degradation check. It does not implement all algorithms described in the supplied current manuscript. Its figures and precomputed tables remain available through the [legacy overview](LEGACY_README.md).
-
-The new `explorer/` code is an explicitly labelled **reference reimplementation**, not recovered original experiment code. It adds the three inspectable algorithms above without presenting legacy result tables as validation of this new code.
-
-A removal witness describes dependence under the declared protocol. It is not causal recourse, a correctness certificate, or a general nonlinear robustness guarantee. The affine implementation uses floating point and requires disjoint groups covering all columns; near ties need careful numerical treatment.
-
-Related work: [Conditional score training](https://github.com/cenacchi2000/Training-Scores-for-Conditional-Audits) · [Predictive-gain audits](https://github.com/cenacchi2000/Predictive-Gain-Audits)
